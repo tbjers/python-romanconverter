@@ -7,10 +7,12 @@ Setup
 -----
 
 Install dependencies::
+
     make
 
 Testing
 -------
 
 Run tests::
+
     make test
