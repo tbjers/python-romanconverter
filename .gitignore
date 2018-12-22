@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+env/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.coverage
+coverage.xml
