@@ -17,7 +17,7 @@ setup(
     long_description=readme,
     author='Torgny Bjers',
     author_email='torgny@bjers.org',
-    url='https://github.com/tbjers/romanconverter',
+    url='https://github.com/tbjers/python-romanconverter',
     license=license,
     packages=find_packages(),
     include_package_data=True,
