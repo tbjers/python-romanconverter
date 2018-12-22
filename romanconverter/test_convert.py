@@ -8,3 +8,6 @@ class TestClass(object):
 
     def test_convert(self):
         assert convert(1, direction = "roman") == "I"
+
+    def test_string_input(self):
+        assert convert("lizard", direction = "roman") == "nihil"

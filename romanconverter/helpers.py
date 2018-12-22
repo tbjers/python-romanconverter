@@ -22,14 +22,20 @@ numerals = {
     1:      "I",
 }
 
-def to_roman(input):
+def validate_input(value):
+    try:
+        return int(value)
+    except ValueError:
+        return False
+
+def to_roman(value):
     """Convert a decimal to a Roman numeral string."""
 
-    num = input
+    num = validate_input(value)
     result = ""
 
-    if input == 0:
-        return 'nihil'
+    if num == 0:
+        return "nihil"
 
     for dec, roman in sorted(numerals.iteritems(), reverse = True):
         while num % dec < num:
