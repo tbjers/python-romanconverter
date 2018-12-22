@@ -19,5 +19,13 @@ setup(
     author_email='torgny@bjers.org',
     url='https://github.com/tbjers/romanconverter',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        'Click',
+    ],
+    entry_points='''
+        [console_scripts]
+        dec2roman=scripts.dec2roman:cli
+    '''
 )
